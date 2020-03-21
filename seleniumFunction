@@ -14,7 +14,7 @@ public class seleniumFunction {
     public static WebDriver driver=null;
     public static WebDriverWait waitVar=null;
 
-    public static String baseURL="https://gist.github.com/discover";
+    public static String baseURL="https://gist.github.com/ombob06";
 
     public void createDriver() throws MalformedURLException,InterruptedException{
         System.setProperty("webDriver.chrome.driver","/home/KAW/chromedriver");
