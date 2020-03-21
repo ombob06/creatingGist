@@ -1,0 +1,81 @@
+package newpackage;
+
+import java.net.MalformedURLException;
+
+import newpackage.seleniumFunction;
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class StepDefinition {
+	seleniumFunction sf = new seleniumFunction();
+	@Given ("^user access gist$")
+	public void user_access_gists () throws MalformedURLException,InterruptedException{
+	
+	sf.createDriver();
+	sf.inGistKAW();
+	}
+	
+	@When("^user add new public gist$")
+	public void user_add_new_ public_ gist (){
+	sf.clickAdd();
+	sf.addPublic();
+	}
+	
+	@Then("^displayed gist added$")
+	public void displayed_gist_added() {
+	sf.displayed_add_updated();
+	}
+	
+	@Given ("^user access gist$")
+	public void user_access_gists () throws MalformedURLException,InterruptedException{
+	
+	sf.createDriver();
+	sf.inGistKAW();
+	}
+	
+	@When ("^user edit an existing gist$")
+	public void user_edit_an_existing_gist(){
+	sf.clickDetailGist
+	sf.EditExisting 
+	}
+	
+	@Then ("^displayed gist updated$")
+	public void displayed_gist_updated(){
+	sf.displayed_add_updated
+	}
+	
+	@Given("^user access gist$")
+	public void user_access_gists () throws MalformedURLException,InterruptedException{
+	
+	sf.createDriver();
+	sf.inGistKAW();
+	}
+	
+	@When ("^user delete an existing gist$")
+	public void user_delete_an_existing_gist(){
+	sf.GistDelete();
+	}
+	
+	@Then ("^displayed list all gist$")
+	public void displayed_list_all_gist(){
+	sf.inGistKAW();
+	}
+	
+	@Given("^user access gist$")
+	public void user_access_gists () throws MalformedURLException,InterruptedException{
+	
+	sf.createDriver();
+	sf.inGistKAW();
+	}
+	
+	@When("^user click see all of your gists$")
+	public void user_click_see_all_of_your_gists(){
+	sf.MyListGist();
+	}
+	
+	@Then displayed list all gist 	
+	public void displayed_list_all_gist(){
+	sf.inGistKAW();
+	}
